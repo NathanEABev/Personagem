@@ -21,11 +21,28 @@
             font-size: 160px;
             position: absolute;
             bottom: 0;
+            color: #ffffff;
+            z-index: 5;
+        }
+
+        #fundo {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10; /* Mantém o canvas acima */
         }
 
         img {
             width: 250px;
             position: absolute;
+            z-index: 5;
         }
 
         script {
@@ -34,8 +51,9 @@
     </style>
 </head>
 <body>
+    <script src="sketch.js"></script>
+    <img src="fundo.jpg" alt="" id="fundo">
     <img src="P5R.webp" alt="">
     <h1>Morgana</h1>
-    <script src="sketch.js"></script>
 </body>
 </html>

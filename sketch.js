@@ -9,7 +9,6 @@ function setup() {
 
     createCanvas(canvasWidth, canvasHeight)
     angleMode(DEGREES);
-    background(200, 200, 200)
 }
 
 function windowResized() {
@@ -22,19 +21,14 @@ function windowResized() {
     const canvasHeight = max(windowHeight - 4, minHeight);
 
     resizeCanvas(canvasWidth, canvasHeight)
-    background(200, 200, 200)
-}
-
-let fonte
-
-function preLoad() {
-    fonte = loadFont('fonte.otf')
 }
 
 let pHori
 let pVert
 
 function draw() {
+    clear()
+
     //orelha externa
     fill(20,20,20)
     noStroke()
